@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:jakaria/second_page.dart';
 
 void main() {
   runApp(const AmarApp());
@@ -37,6 +38,15 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Center(
           child: Column(
             children: [
+              
+              ElevatedButton(
+                  onPressed:(){
+                   Navigator.push(context, MaterialPageRoute
+                     (builder: (context)=>SecondPage()));
+                    
+                  }, 
+                  child: Text("go to Second Page")
+              ),
              Padding(
                padding: const EdgeInsets.all(18.0),
                child: RaisedButton(
